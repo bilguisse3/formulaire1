@@ -32,13 +32,15 @@ form h3{
 .container{
     width: 100%;
     max-width: 900PX;
-  background:  black;
+    background:  black;
     padding: 10%;
     margin: 0 38px;
-box-shadow: inset -2px 2px 2px white;
-opacity: 80%;
-padding-top: 15px;
-border: 1px solid#fff;
+    box-shadow: inset -2px 2px 2px white;
+    opacity: 80%;
+    padding-top: 20px;
+    border: 1px solid white;
+    height: 127%;
+   
 }
 .main-user-info{
 display: flex;
@@ -56,6 +58,7 @@ top: 20px;
     width: 50%;
     padding-bottom: 30px;
     top:20%;
+    
 }
 .user-input-box label{
     width: 95%;
@@ -72,7 +75,6 @@ top: 20px;
     padding: 0 20px;
     opacity: 20%;
     padding-left: 10px;
-    
 }
 .gender-category{
     margin: 15px 0,;
@@ -90,15 +92,14 @@ top: 20px;
    opacity: 20%;
 }
 .contact-img{
-    width: 120px;
+    width: 100px;
     padding-top: -5px;
     margin: 10px;
     display: flex;
     padding: 10;
     padding: 0 20px 0 13px;
     padding-left: 5px;
-    margin-left: 2%;
-        
+    margin-left: 2%;     
 }
 p{
     color: white;
@@ -106,20 +107,67 @@ p{
 }
 .form-submit-btn input{
     background: orangered;
-    margin-left: 40%;
-    padding-left: 50%;
-    padding: 15px;
-    margin-top: 10%;
-    
+    margin-left: 30%;
+    padding: 20px;
+    margin-top: 15%;
+    padding-left: 20%;
+    color: white;
     
 }
-
-@media screen and (max-width: 768px){
-    .contact-box{ 
-      flex-direction: column;
-      height: auto;
+@media screen and (max-width: 480px){
+    .container{ 
+      width: 500%;
+      height: 500vh;
+      margin: 50%;
+      padding-right: 45%;
+      padding-left: 40%;
    }
-  }
+   .user-input-box{
+    margin-bottom: -20px;
+    width: 90%;
+   }
+   .user-input-box:nth-child(2n){
+    justify-content: space-between;
+   }
+   .gender-category{
+   
+    justify-content: space-between;
+   }
+   .main-user-info{
+    max-height: 380px;
+   
+   }
+   .main-user-info::-webkit-srollbar{
+width: 0;
+   }
+   .contact-img{
+    display: contents;
+    padding-right: 15px;
+    padding-top: 100px;
+    margin: 20px;
+   width: 0%;
+   height: 40px;
+   top: -200%;
+   }
+   .user-input-box input{
+    padding-right: 20%;
+    padding-left: 30px;
+    padding: 0%;
+    width:300px;
+   }
+.user-input-box textarea{
+    padding-left: 100%;
+   }
+   
+   }
+  
+
+
+
+
+  
+
+  
    
    
    

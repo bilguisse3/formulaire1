@@ -142,6 +142,7 @@ p{
    .main-user-info::-webkit-srollbar{
 width: 0;
    }
+
    .user-input-box input{
     padding-right: 20%;
     padding-left: 30px;
